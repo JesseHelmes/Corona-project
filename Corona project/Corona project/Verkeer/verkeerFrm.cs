@@ -11,17 +11,13 @@ namespace Corona_project.Verkeer
         private Button[] antwoordBtnsArray;
         private string antwoord;
         private int vraagIndex = 0, aantalVragen, aantalAntwoordBtns;
-        VerkeerVragen verkeerVragen = new VerkeerVragen();
-        List<VerkeerVraag> vragen;
+        private VerkeerVragen verkeerVragen = new VerkeerVragen();
+        private List<VerkeerVraag> vragen;
 
         public verkeerFrm()
         {
             InitializeComponent();
-            /*
-             new antwoorden en afbeelding laden
-             als dit met database gaat kan ik die van stage gebruiken.. maar
-             dat is niet mvc..
-             */
+
             antwoordBtnsArray = new Button[] { antwoordBtn1, antwoordBtn2, antwoordBtn3, antwoordBtn4 };
             vragen = verkeerVragen.getVragen();
 
@@ -35,6 +31,12 @@ namespace Corona_project.Verkeer
             laadVraag();
         }
 
+        private void verkeerFrm_Shown(object sender, EventArgs e)
+        {
+            MessageBox.Show("Klik op de goede antwoord om naar de volgende vraag te gaan\n" +
+                "heb je het fout kun je blijven proberen tot je de goede antwoord hebt", "Uitleg", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
+
         public void laadVraag()
         {
             try
@@ -42,13 +44,13 @@ namespace Corona_project.Verkeer
                 if (vraagIndex < aantalVragen)
                 {
                     signPicBox.Image = vragen[vraagIndex].getImage();
-                    vraagLbl.Text = vragen[vraagIndex].getVraag();
+                    vraagLbl.Text = UppercaseFirst(vragen[vraagIndex].getVraag());
 
                     for (int i = 0; i < aantalAntwoordBtns; i++)
                     {
                         antwoordBtnsArray[i].ForeColor = Color.Black;
                         antwoordBtnsArray[i].Visible = true;
-                        antwoordBtnsArray[i].Text = vragen[vraagIndex].getAntwoorden(i);
+                        antwoordBtnsArray[i].Text = UppercaseFirst(vragen[vraagIndex].getAntwoorden(i));
 
                         if (antwoordBtnsArray[i].Text == "")
                         {
@@ -56,14 +58,29 @@ namespace Corona_project.Verkeer
                         }
                     }
 
-                    antwoord = vragen[vraagIndex].getCorrectAntwoord();
+                    antwoord = UppercaseFirst(vragen[vraagIndex].getCorrectAntwoord());
+                }
+                else
+                {
+                    signPicBox.Visible = false;
+                    antwoordenFlowPnl.Visible = false;
+                    vraagLbl.Text = "Je hebt alle vragen beantwoord goed zo!";
+                    vraagLbl.Font = new Font(FontFamily.GenericSansSerif, 11F, FontStyle.Bold);
                 }
             }
             catch (Exception ex)
             {
-                //throw;
                 Debug.WriteLine(ex);
             }
+        }
+
+        public string UppercaseFirst(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+            {
+                return string.Empty;
+            }
+            return char.ToUpper(s[0]) + s.Substring(1);
         }
 
         private void controlleerAntwoord(object sender, EventArgs e)
@@ -75,14 +92,12 @@ namespace Corona_project.Verkeer
             }
             if (btn.Text == antwoord)
             {
-                Debug.WriteLine("goed zo!");
                 vraagIndex++;
                 laadVraag();
             }
             else
             {
                 btn.ForeColor = Color.Red;
-                Debug.WriteLine("fout!");
             }
         }
     }
