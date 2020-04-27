@@ -103,21 +103,23 @@
             // 
             this.vraagLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.vraagLbl.AutoSize = true;
+            this.vraagLbl.BackColor = System.Drawing.SystemColors.Control;
             this.vraagLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vraagLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.vraagLbl.Location = new System.Drawing.Point(356, 264);
+            this.vraagLbl.Location = new System.Drawing.Point(195, 264);
             this.vraagLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.vraagLbl.MaximumSize = new System.Drawing.Size(410, 0);
+            this.vraagLbl.MaximumSize = new System.Drawing.Size(410, 50);
+            this.vraagLbl.MinimumSize = new System.Drawing.Size(410, 50);
             this.vraagLbl.Name = "vraagLbl";
-            this.vraagLbl.Size = new System.Drawing.Size(88, 13);
+            this.vraagLbl.Size = new System.Drawing.Size(410, 50);
             this.vraagLbl.TabIndex = 3;
             this.vraagLbl.Text = "dit is de vraag";
-            this.vraagLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.vraagLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // signPicBox
             // 
-            this.signPicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.signPicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signPicBox.BackColor = System.Drawing.Color.White;
             this.signPicBox.Location = new System.Drawing.Point(191, 12);
@@ -135,10 +137,12 @@
             this.Controls.Add(this.vraagLbl);
             this.Controls.Add(this.antwoordenFlowPnl);
             this.Controls.Add(this.signPicBox);
-            this.MinimumSize = new System.Drawing.Size(816, 535);
+            this.MinimumSize = new System.Drawing.Size(816, 534);
             this.Name = "verkeerFrm";
-            this.Text = "verkeerFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Verkeer";
             this.Load += new System.EventHandler(this.verkeerFrm_Load);
+            this.Shown += new System.EventHandler(this.verkeerFrm_Shown);
             this.antwoordenFlowPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.signPicBox)).EndInit();
             this.ResumeLayout(false);

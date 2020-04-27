@@ -8,6 +8,16 @@ namespace Corona_project.Verkeer
         private string vraag, correctAntwoord;
         private string[] antwoorden;
 
+        //new constructor
+        public VerkeerVraag(Bitmap image, string vraag, string goedAntwoord, string antwoord1, string antwoord2 = "", string antwoord3 = "")
+        {
+            this.image = image;
+            this.vraag = vraag;
+            this.antwoorden = new string [] { goedAntwoord, antwoord1, antwoord2, antwoord3};
+            this.correctAntwoord = goedAntwoord;
+            this.antwoorden.Shuffle();
+        }
+
         public VerkeerVraag(Bitmap image, string vraag, string[] antwoorden, int goedeAntwoordUitAntwoorden)
         {
             this.image = image;

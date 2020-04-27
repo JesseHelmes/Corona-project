@@ -54,11 +54,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Teken_canvas\tekenCanvasFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,34 +77,21 @@
     </Compile>
     <Compile Include="Verkeer\VerkeerVraag.cs" />
     <Compile Include="Verkeer\vragen.cs" />
-
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Teken_canvas\tekenCanvasFrm.resx">
       <DependentUpon>tekenCanvasFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verkeer\verkeerFrm.resx">
       <DependentUpon>verkeerFrm.cs</DependentUpon>
     </EmbeddedResource>
-
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -112,15 +102,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-
-    <Folder Include="Resources\" />
-    <Folder Include="Views\" />
-
     <None Include="Resources\verkeer1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\verkeer2.png" />
-
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
