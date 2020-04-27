@@ -54,11 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< Updated upstream
+
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-=======
+
     <Compile Include="Teken_canvas\tekenCanvasFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,14 +74,13 @@
     </Compile>
     <Compile Include="Verkeer\VerkeerVraag.cs" />
     <Compile Include="Verkeer\vragen.cs" />
->>>>>>> Stashed changes
+
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-<<<<<<< Updated upstream
-=======
+
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -93,7 +92,7 @@
     <EmbeddedResource Include="Verkeer\verkeerFrm.resx">
       <DependentUpon>verkeerFrm.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> Stashed changes
+
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,15 +112,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
+
     <Folder Include="Resources\" />
     <Folder Include="Views\" />
-=======
+
     <None Include="Resources\verkeer1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\verkeer2.png" />
->>>>>>> Stashed changes
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
