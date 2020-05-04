@@ -18,6 +18,7 @@ namespace Corona_project.Verkeer
             this.antwoorden.Shuffle();
         }
 
+        //old constructor
         public VerkeerVraag(Bitmap image, string vraag, string[] antwoorden, int goedeAntwoordUitAntwoorden)
         {
             this.image = image;

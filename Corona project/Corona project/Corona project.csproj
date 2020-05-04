@@ -128,5 +128,14 @@
   <ItemGroup>
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer11.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

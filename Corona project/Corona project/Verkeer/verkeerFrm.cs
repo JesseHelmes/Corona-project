@@ -65,7 +65,7 @@ namespace Corona_project.Verkeer
                     signPicBox.Visible = false;
                     antwoordenFlowPnl.Visible = false;
                     vraagLbl.Text = "Je hebt alle vragen beantwoord goed zo!";
-                    vraagLbl.Font = new Font(FontFamily.GenericSansSerif, 11F, FontStyle.Bold);
+                    vraagLbl.Font = new Font(vraagLbl.Font.FontFamily, 12F, FontStyle.Bold);
                 }
             }
             catch (Exception ex)

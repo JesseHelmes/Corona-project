@@ -16,7 +16,8 @@ namespace Corona_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new Verkeer.verkeerFrm());
+            //Application.Run(new frmMain());
         }
     }
 }

@@ -53,7 +53,7 @@
             // 
             // antwoordBtn1
             // 
-            this.antwoordBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.antwoordBtn1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.antwoordBtn1.Location = new System.Drawing.Point(3, 3);
             this.antwoordBtn1.Name = "antwoordBtn1";
             this.antwoordBtn1.Size = new System.Drawing.Size(381, 75);
@@ -65,7 +65,7 @@
             // 
             // antwoordBtn2
             // 
-            this.antwoordBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.antwoordBtn2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.antwoordBtn2.Location = new System.Drawing.Point(390, 3);
             this.antwoordBtn2.Name = "antwoordBtn2";
             this.antwoordBtn2.Size = new System.Drawing.Size(381, 75);
@@ -77,7 +77,7 @@
             // 
             // antwoordBtn3
             // 
-            this.antwoordBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.antwoordBtn3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.antwoordBtn3.Location = new System.Drawing.Point(3, 84);
             this.antwoordBtn3.Name = "antwoordBtn3";
             this.antwoordBtn3.Size = new System.Drawing.Size(381, 75);
@@ -89,7 +89,7 @@
             // 
             // antwoordBtn4
             // 
-            this.antwoordBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.antwoordBtn4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.antwoordBtn4.Location = new System.Drawing.Point(390, 84);
             this.antwoordBtn4.Name = "antwoordBtn4";
             this.antwoordBtn4.Size = new System.Drawing.Size(381, 75);
@@ -104,7 +104,7 @@
             this.vraagLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.vraagLbl.AutoSize = true;
             this.vraagLbl.BackColor = System.Drawing.SystemColors.Control;
-            this.vraagLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vraagLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vraagLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.vraagLbl.Location = new System.Drawing.Point(195, 264);
             this.vraagLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -118,8 +118,8 @@
             // 
             // signPicBox
             // 
-            this.signPicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.signPicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signPicBox.BackColor = System.Drawing.Color.White;
             this.signPicBox.Location = new System.Drawing.Point(191, 12);
