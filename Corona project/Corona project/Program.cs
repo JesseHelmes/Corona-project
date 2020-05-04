@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Corona_project
@@ -16,8 +13,7 @@ namespace Corona_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Verkeer.verkeerFrm());
-            //Application.Run(new frmMain());
+            Application.Run(new frmMain());
         }
     }
 }

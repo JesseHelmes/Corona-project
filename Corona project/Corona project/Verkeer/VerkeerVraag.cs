@@ -13,7 +13,7 @@ namespace Corona_project.Verkeer
         {
             this.image = image;
             this.vraag = vraag;
-            this.antwoorden = new string [] { goedAntwoord, antwoord1, antwoord2, antwoord3};
+            this.antwoorden = new string[] { goedAntwoord, antwoord1, antwoord2, antwoord3 };
             this.correctAntwoord = goedAntwoord;
             this.antwoorden.Shuffle();
         }
