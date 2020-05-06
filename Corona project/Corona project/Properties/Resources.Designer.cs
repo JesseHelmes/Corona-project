@@ -73,6 +73,66 @@ namespace Corona_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap verkeer10 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer11 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer12 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer13 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer14 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer15 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap verkeer2 {
             get {
                 object obj = ResourceManager.GetObject("verkeer2", resourceCulture);
@@ -136,6 +196,16 @@ namespace Corona_project.Properties {
         internal static System.Drawing.Bitmap verkeer8 {
             get {
                 object obj = ResourceManager.GetObject("verkeer8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verkeer9 {
+            get {
+                object obj = ResourceManager.GetObject("verkeer9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
