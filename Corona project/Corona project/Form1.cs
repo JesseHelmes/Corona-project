@@ -16,5 +16,11 @@ namespace Corona_project
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            frmRekenspel frs = new frmRekenspel();
+            frs.Show();
+        }
     }
 }
