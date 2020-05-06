@@ -77,9 +77,37 @@ namespace Corona_project.Verkeer
                  ),//https://www.verkeer-oefenen.nl/verkeer-groep-7/oversteken
              new VerkeerVraag(Properties.Resources.verkeer11,
                  "wat moet je doen als de lichten knipperen?",
-                     "stoppen en wachten tot dat de lichten uit zijn",
+                     "stoppen en wachten totdat de lichten uit zijn",
                      "door rijden",
                      "stoppen en verder rijden wanneer de spoorboom weer omhoog gaat",
+                     ""
+                 ),
+             new VerkeerVraag(Properties.Resources.verkeer12,
+                 "wanneer moet je de licht aan hebben op de fiets?",
+                     "wanneer het donker, schemerig of mistig",
+                     "wanneer het donker of schemerig",
+                     "wanneer het schemerig of mistig",
+                     "alleen in het donker"
+                 ),
+             new VerkeerVraag(Properties.Resources.verkeer13,
+                 "wat betekend dit bord?",
+                     "rotonde",
+                     "rij een rondje",
+                     "draai om",
+                     "recyclen"
+                 ),
+             new VerkeerVraag(Properties.Resources.verkeer14,
+                 "wat betekend dit bord?",
+                     "drempel",
+                     "slecht wegdek",
+                     "heuvel",
+                     ""
+                 ),
+             new VerkeerVraag(Properties.Resources.verkeer15,
+                 "wat betekend dit bord?",
+                     "slecht wegdek",
+                     "drempel",
+                     "twee heuvels",
                      ""
                  )
         };

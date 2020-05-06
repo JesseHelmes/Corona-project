@@ -137,5 +137,20 @@
   <ItemGroup>
     <None Include="Resources\verkeer11.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verkeer15.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

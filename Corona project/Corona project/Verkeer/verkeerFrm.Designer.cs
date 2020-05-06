@@ -35,6 +35,7 @@
             this.antwoordBtn4 = new System.Windows.Forms.Button();
             this.vraagLbl = new System.Windows.Forms.Label();
             this.signPicBox = new System.Windows.Forms.PictureBox();
+            this.lblProgress = new System.Windows.Forms.Label();
             this.antwoordenFlowPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signPicBox)).BeginInit();
             this.SuspendLayout();
@@ -129,15 +130,32 @@
             this.signPicBox.TabIndex = 0;
             this.signPicBox.TabStop = false;
             // 
+            // lblProgress
+            // 
+            this.lblProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblProgress.AutoSize = true;
+            this.lblProgress.BackColor = System.Drawing.SystemColors.Control;
+            this.lblProgress.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProgress.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblProgress.Location = new System.Drawing.Point(748, 12);
+            this.lblProgress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProgress.MinimumSize = new System.Drawing.Size(40, 18);
+            this.lblProgress.Name = "lblProgress";
+            this.lblProgress.Size = new System.Drawing.Size(40, 18);
+            this.lblProgress.TabIndex = 4;
+            this.lblProgress.Text = "0/1";
+            this.lblProgress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // verkeerFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 496);
+            this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.vraagLbl);
             this.Controls.Add(this.antwoordenFlowPnl);
             this.Controls.Add(this.signPicBox);
-            this.MinimumSize = new System.Drawing.Size(816, 534);
+            this.MinimumSize = new System.Drawing.Size(816, 532);
             this.Name = "verkeerFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verkeer";
@@ -159,5 +177,6 @@
         private System.Windows.Forms.Button antwoordBtn3;
         private System.Windows.Forms.Button antwoordBtn4;
         private System.Windows.Forms.Label vraagLbl;
+        private System.Windows.Forms.Label lblProgress;
     }
 }

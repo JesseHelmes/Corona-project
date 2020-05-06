@@ -23,6 +23,8 @@ namespace Corona_project.Verkeer
 
             aantalVragen = vragen.Count;
             aantalAntwoordBtns = antwoordBtnsArray.Length;
+
+            progress();
         }
 
         private void verkeerFrm_Load(object sender, EventArgs e)
@@ -64,6 +66,7 @@ namespace Corona_project.Verkeer
                 {
                     signPicBox.Visible = false;
                     antwoordenFlowPnl.Visible = false;
+                    lblProgress.Visible = false;
                     vraagLbl.Text = "Je hebt alle vragen beantwoord goed zo!";
                     vraagLbl.Font = new Font(vraagLbl.Font.FontFamily, 12F, FontStyle.Bold);
                 }
@@ -94,11 +97,17 @@ namespace Corona_project.Verkeer
             {
                 vraagIndex++;
                 laadVraag();
+                progress();
             }
             else
             {
                 btn.ForeColor = Color.Red;
             }
+        }
+
+        public void progress()
+        {
+            lblProgress.Text = vraagIndex + 1 + "/" + aantalVragen;
         }
     }
 }
