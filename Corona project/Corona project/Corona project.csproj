@@ -67,6 +67,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +78,7 @@
     </Compile>
     <EmbeddedResource Include="spel\Rekenspel.resx">
       <DependentUpon>Rekenspel.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Teken_canvas\tekenCanvasFrm.cs">
       <SubType>Form</SubType>
     </Compile>
