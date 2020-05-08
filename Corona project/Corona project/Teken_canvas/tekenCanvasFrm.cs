@@ -14,6 +14,11 @@ namespace Corona_project.Teken_canvas
         private Pen pen, eraser;
         private Bitmap buffer;
 
+        /*
+        ToDo
+
+        */
+
         /*paint
         https://www.youtube.com/watch?v=xyEG1e5Gnic
         keep graphics
@@ -24,7 +29,7 @@ namespace Corona_project.Teken_canvas
         {
             InitializeComponent();
             pen = new Pen(colorPicker.Color);
-            eraser = new Pen(Color.Transparent);
+            eraser = new Pen(canvasPicBox.BackColor);
             pen.StartCap = pen.EndCap = LineCap.Round;
         }
 
@@ -53,7 +58,6 @@ namespace Corona_project.Teken_canvas
         {
             float size = (float)brushSize.Value;
             pen.Width = size;
-            eraser.Width = size;
             moving = true;
             x = e.X;
             y = e.Y;
@@ -85,6 +89,20 @@ namespace Corona_project.Teken_canvas
             canvasPicBox.Invalidate();
         }
 
+        private void btnEraser_Click(object sender, EventArgs e)
+        {
+            pen.Color = eraser.Color;
+            btnEraser.BackColor = Color.LightSteelBlue;
+            btnPen.BackColor = Color.LightGray;
+        }
+
+        private void btnPen_Click(object sender, EventArgs e)
+        {
+            pen.Color = colorPicker.Color;
+            btnPen.BackColor = Color.LightSteelBlue;
+            btnEraser.BackColor = Color.LightGray;
+        }
+
         private void canvasPicBox_SizeChanged(object sender, EventArgs e)
         {
             canvasPicBox.Invalidate();
@@ -93,8 +111,6 @@ namespace Corona_project.Teken_canvas
         private void canvasPicBox_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(buffer, 0, 0);
-            //e.Graphics.DrawImage(buffer, 0, 0, canvasPicBox.ClientSize.Width, canvasPicBox.ClientSize.Height);
-            //canvasPicBox.Invalidate();
         }
     }
 }

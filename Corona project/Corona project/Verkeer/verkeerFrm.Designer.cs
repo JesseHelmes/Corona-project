@@ -47,17 +47,19 @@
             this.antwoordenFlowPnl.Controls.Add(this.antwoordBtn2);
             this.antwoordenFlowPnl.Controls.Add(this.antwoordBtn3);
             this.antwoordenFlowPnl.Controls.Add(this.antwoordBtn4);
-            this.antwoordenFlowPnl.Location = new System.Drawing.Point(12, 322);
+            this.antwoordenFlowPnl.Location = new System.Drawing.Point(16, 396);
+            this.antwoordenFlowPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.antwoordenFlowPnl.Name = "antwoordenFlowPnl";
-            this.antwoordenFlowPnl.Size = new System.Drawing.Size(776, 162);
+            this.antwoordenFlowPnl.Size = new System.Drawing.Size(1035, 199);
             this.antwoordenFlowPnl.TabIndex = 2;
             // 
             // antwoordBtn1
             // 
             this.antwoordBtn1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.antwoordBtn1.Location = new System.Drawing.Point(3, 3);
+            this.antwoordBtn1.Location = new System.Drawing.Point(4, 4);
+            this.antwoordBtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.antwoordBtn1.Name = "antwoordBtn1";
-            this.antwoordBtn1.Size = new System.Drawing.Size(381, 75);
+            this.antwoordBtn1.Size = new System.Drawing.Size(508, 92);
             this.antwoordBtn1.TabIndex = 0;
             this.antwoordBtn1.TabStop = false;
             this.antwoordBtn1.Text = "antwoord1";
@@ -67,9 +69,10 @@
             // antwoordBtn2
             // 
             this.antwoordBtn2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.antwoordBtn2.Location = new System.Drawing.Point(390, 3);
+            this.antwoordBtn2.Location = new System.Drawing.Point(520, 4);
+            this.antwoordBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.antwoordBtn2.Name = "antwoordBtn2";
-            this.antwoordBtn2.Size = new System.Drawing.Size(381, 75);
+            this.antwoordBtn2.Size = new System.Drawing.Size(508, 92);
             this.antwoordBtn2.TabIndex = 1;
             this.antwoordBtn2.TabStop = false;
             this.antwoordBtn2.Text = "antwoord2";
@@ -79,9 +82,10 @@
             // antwoordBtn3
             // 
             this.antwoordBtn3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.antwoordBtn3.Location = new System.Drawing.Point(3, 84);
+            this.antwoordBtn3.Location = new System.Drawing.Point(4, 104);
+            this.antwoordBtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.antwoordBtn3.Name = "antwoordBtn3";
-            this.antwoordBtn3.Size = new System.Drawing.Size(381, 75);
+            this.antwoordBtn3.Size = new System.Drawing.Size(508, 92);
             this.antwoordBtn3.TabIndex = 2;
             this.antwoordBtn3.TabStop = false;
             this.antwoordBtn3.Text = "antwoord3";
@@ -91,9 +95,10 @@
             // antwoordBtn4
             // 
             this.antwoordBtn4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.antwoordBtn4.Location = new System.Drawing.Point(390, 84);
+            this.antwoordBtn4.Location = new System.Drawing.Point(520, 104);
+            this.antwoordBtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.antwoordBtn4.Name = "antwoordBtn4";
-            this.antwoordBtn4.Size = new System.Drawing.Size(381, 75);
+            this.antwoordBtn4.Size = new System.Drawing.Size(508, 92);
             this.antwoordBtn4.TabIndex = 3;
             this.antwoordBtn4.TabStop = false;
             this.antwoordBtn4.Text = "antwoord4";
@@ -107,12 +112,11 @@
             this.vraagLbl.BackColor = System.Drawing.SystemColors.Control;
             this.vraagLbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vraagLbl.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.vraagLbl.Location = new System.Drawing.Point(195, 264);
-            this.vraagLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.vraagLbl.MaximumSize = new System.Drawing.Size(410, 50);
-            this.vraagLbl.MinimumSize = new System.Drawing.Size(410, 50);
+            this.vraagLbl.Location = new System.Drawing.Point(260, 325);
+            this.vraagLbl.MaximumSize = new System.Drawing.Size(547, 62);
+            this.vraagLbl.MinimumSize = new System.Drawing.Size(547, 62);
             this.vraagLbl.Name = "vraagLbl";
-            this.vraagLbl.Size = new System.Drawing.Size(410, 50);
+            this.vraagLbl.Size = new System.Drawing.Size(547, 62);
             this.vraagLbl.TabIndex = 3;
             this.vraagLbl.Text = "dit is de vraag";
             this.vraagLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -123,9 +127,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.signPicBox.BackColor = System.Drawing.Color.White;
-            this.signPicBox.Location = new System.Drawing.Point(191, 12);
+            this.signPicBox.Location = new System.Drawing.Point(255, 15);
+            this.signPicBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signPicBox.Name = "signPicBox";
-            this.signPicBox.Size = new System.Drawing.Size(418, 242);
+            this.signPicBox.Size = new System.Drawing.Size(557, 298);
             this.signPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.signPicBox.TabIndex = 0;
             this.signPicBox.TabStop = false;
@@ -137,25 +142,25 @@
             this.lblProgress.BackColor = System.Drawing.SystemColors.Control;
             this.lblProgress.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgress.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblProgress.Location = new System.Drawing.Point(748, 12);
-            this.lblProgress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProgress.MinimumSize = new System.Drawing.Size(40, 18);
+            this.lblProgress.Location = new System.Drawing.Point(997, 15);
+            this.lblProgress.MinimumSize = new System.Drawing.Size(53, 22);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(40, 18);
+            this.lblProgress.Size = new System.Drawing.Size(53, 22);
             this.lblProgress.TabIndex = 4;
             this.lblProgress.Text = "0/1";
             this.lblProgress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // verkeerFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 496);
+            this.ClientSize = new System.Drawing.Size(1067, 610);
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.vraagLbl);
             this.Controls.Add(this.antwoordenFlowPnl);
             this.Controls.Add(this.signPicBox);
-            this.MinimumSize = new System.Drawing.Size(816, 532);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1082, 644);
             this.Name = "verkeerFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verkeer";
