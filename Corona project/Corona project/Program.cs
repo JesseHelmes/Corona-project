@@ -1,5 +1,4 @@
-﻿using TOPO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +16,7 @@ namespace Corona_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTopo());
+            Application.Run(new frmMain());
         }
     }
 }

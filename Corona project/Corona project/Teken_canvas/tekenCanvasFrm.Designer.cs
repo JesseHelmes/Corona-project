@@ -1,4 +1,4 @@
-﻿namespace Corona_project.Teken_canvas
+﻿namespace Corona_project
 {
     partial class tekenCanvasFrm
     {

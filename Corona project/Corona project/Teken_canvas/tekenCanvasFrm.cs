@@ -4,7 +4,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 
-namespace Corona_project.Teken_canvas
+namespace Corona_project
 {
     public partial class tekenCanvasFrm : Form
     {

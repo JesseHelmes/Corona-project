@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Corona_project.Verkeer
+namespace Corona_project
 {
     public static class IListExtensions
     {

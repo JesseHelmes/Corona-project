@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Corona_project.Verkeer
+namespace Corona_project
 {
     public partial class verkeerFrm : Form
     {

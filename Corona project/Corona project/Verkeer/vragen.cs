@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Corona_project.Verkeer
+namespace Corona_project
 {
     class VerkeerVragen
     {

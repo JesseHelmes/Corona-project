@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Corona_project.Verkeer
+namespace Corona_project
 {
     class VerkeerVraag
     {

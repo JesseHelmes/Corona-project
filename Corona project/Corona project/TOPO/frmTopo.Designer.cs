@@ -1,4 +1,4 @@
-﻿namespace TOPO
+﻿namespace Corona_project
 {
     partial class frmTopo
     {
