@@ -46,64 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="spel\Rekenspel.cs">
+    <Compile Include="TOPO\EndMessage.cs" />
+    <Compile Include="TOPO\frmTopo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="spel\Rekenspel.Designer.cs">
-      <DependentUpon>Rekenspel.cs</DependentUpon>
+    <Compile Include="TOPO\frmTopo.Designer.cs">
+      <DependentUpon>frmTopo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="spel\Rekenspel.resx">
-      <DependentUpon>Rekenspel.cs</DependentUpon>
-    </EmbeddedResource>
-    <Compile Include="Teken_canvas\tekenCanvasFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Teken_canvas\tekenCanvasFrm.Designer.cs">
-      <DependentUpon>tekenCanvasFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Verkeer\IListExtensions.cs" />
-    <Compile Include="Verkeer\verkeerFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Verkeer\verkeerFrm.Designer.cs">
-      <DependentUpon>verkeerFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Verkeer\VerkeerVraag.cs" />
-    <Compile Include="Verkeer\vragen.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Teken_canvas\tekenCanvasFrm.resx">
-      <DependentUpon>tekenCanvasFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Verkeer\verkeerFrm.resx">
-      <DependentUpon>verkeerFrm.cs</DependentUpon>
+    <EmbeddedResource Include="TOPO\frmTopo.resx">
+      <DependentUpon>frmTopo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,55 +88,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\verkeer1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer10.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer12.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer14.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verkeer15.png" />
+    <None Include="Resources\kaart-nederland1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
