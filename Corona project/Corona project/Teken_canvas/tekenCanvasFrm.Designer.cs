@@ -35,8 +35,10 @@
             this.brushSize = new System.Windows.Forms.NumericUpDown();
             this.btnEraser = new System.Windows.Forms.Button();
             this.btnPen = new System.Windows.Forms.Button();
+            this.currentColorBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.canvasPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brushSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentColorBox)).BeginInit();
             this.SuspendLayout();
             // 
             // canvasPicBox
@@ -71,10 +73,14 @@
             this.btnPickColor.UseVisualStyleBackColor = true;
             this.btnPickColor.Click += new System.EventHandler(this.btnPickColor_Click);
             // 
+            // colorPicker
+            // 
+            this.colorPicker.FullOpen = true;
+            // 
             // btnWissen
             // 
             this.btnWissen.Location = new System.Drawing.Point(15, 49);
-            this.btnWissen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWissen.Margin = new System.Windows.Forms.Padding(4);
             this.btnWissen.Name = "btnWissen";
             this.btnWissen.Size = new System.Drawing.Size(100, 28);
             this.btnWissen.TabIndex = 23;
@@ -85,7 +91,7 @@
             // brushSize
             // 
             this.brushSize.Location = new System.Drawing.Point(15, 85);
-            this.brushSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.brushSize.Margin = new System.Windows.Forms.Padding(4);
             this.brushSize.Minimum = new decimal(new int[] {
             1,
             0,
@@ -102,7 +108,7 @@
             // 
             // btnEraser
             // 
-            this.btnEraser.Location = new System.Drawing.Point(15, 172);
+            this.btnEraser.Location = new System.Drawing.Point(15, 208);
             this.btnEraser.Name = "btnEraser";
             this.btnEraser.Size = new System.Drawing.Size(85, 28);
             this.btnEraser.TabIndex = 25;
@@ -112,7 +118,7 @@
             // 
             // btnPen
             // 
-            this.btnPen.Location = new System.Drawing.Point(15, 206);
+            this.btnPen.Location = new System.Drawing.Point(15, 174);
             this.btnPen.Name = "btnPen";
             this.btnPen.Size = new System.Drawing.Size(85, 28);
             this.btnPen.TabIndex = 26;
@@ -120,11 +126,21 @@
             this.btnPen.UseVisualStyleBackColor = true;
             this.btnPen.Click += new System.EventHandler(this.btnPen_Click);
             // 
+            // currentColorBox
+            // 
+            this.currentColorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.currentColorBox.Location = new System.Drawing.Point(122, 14);
+            this.currentColorBox.Name = "currentColorBox";
+            this.currentColorBox.Size = new System.Drawing.Size(30, 30);
+            this.currentColorBox.TabIndex = 27;
+            this.currentColorBox.TabStop = false;
+            // 
             // tekenCanvasFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 458);
+            this.Controls.Add(this.currentColorBox);
             this.Controls.Add(this.btnPen);
             this.Controls.Add(this.btnEraser);
             this.Controls.Add(this.brushSize);
@@ -140,6 +156,7 @@
             this.Load += new System.EventHandler(this.tekenCanvasFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.canvasPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brushSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentColorBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,5 +170,6 @@
         private System.Windows.Forms.NumericUpDown brushSize;
         private System.Windows.Forms.Button btnEraser;
         private System.Windows.Forms.Button btnPen;
+        private System.Windows.Forms.PictureBox currentColorBox;
     }
 }

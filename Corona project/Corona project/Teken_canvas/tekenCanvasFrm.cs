@@ -8,6 +8,7 @@ namespace Corona_project.Teken_canvas
 {
     public partial class tekenCanvasFrm : Form
     {
+        private Button[] toolBtns;
         private int x = -1, y = -1;
         private bool moving = false;
         private Graphics paper;
@@ -28,7 +29,10 @@ namespace Corona_project.Teken_canvas
         public tekenCanvasFrm()
         {
             InitializeComponent();
+            btnPen.BackColor = Color.LightSteelBlue;
+            toolBtns = new Button[] { btnEraser, btnPen };
             pen = new Pen(colorPicker.Color);
+            currentColorBox.BackColor = colorPicker.Color;
             eraser = new Pen(canvasPicBox.BackColor);
             pen.StartCap = pen.EndCap = LineCap.Round;
         }
@@ -46,6 +50,7 @@ namespace Corona_project.Teken_canvas
             if (colorPicker.ShowDialog() == DialogResult.OK)
             {
                 pen.Color = colorPicker.Color;
+                currentColorBox.BackColor = colorPicker.Color;
             }
         }
 
@@ -92,15 +97,23 @@ namespace Corona_project.Teken_canvas
         private void btnEraser_Click(object sender, EventArgs e)
         {
             pen.Color = eraser.Color;
+            resetToolSelection();
             btnEraser.BackColor = Color.LightSteelBlue;
-            btnPen.BackColor = Color.LightGray;
         }
 
         private void btnPen_Click(object sender, EventArgs e)
         {
             pen.Color = colorPicker.Color;
+            resetToolSelection();
             btnPen.BackColor = Color.LightSteelBlue;
-            btnEraser.BackColor = Color.LightGray;
+        }
+
+        private void resetToolSelection()
+        {
+            for (int i = 0; i < toolBtns.Length; i++)
+            {
+                toolBtns[i].BackColor = Color.LightGray;
+            }
         }
 
         private void canvasPicBox_SizeChanged(object sender, EventArgs e)
