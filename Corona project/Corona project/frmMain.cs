@@ -26,13 +26,15 @@ namespace Corona_project
         //Klik op Button Rekenspel
         private void btnRekenSpel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Rekenen geklikt");
+            frmRekenspel frs = new frmRekenspel();
+            frs.Show();
         }
 
         //Klik op Button Topospel
         private void btnTopoSpel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Topo geklikt");
+            frmTopo frt = new frmTopo();
+            frt.Show();
         }
 
         //Klik op Button Nederland&Engels
@@ -44,13 +46,15 @@ namespace Corona_project
         //Klik op Button TekenCanvas
         private void btnTekenCanvas_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("TekenCanvas geklikt");
+            tekenCanvasFrm tcf = new tekenCanvasFrm();
+            tcf.Show();
         }
 
         //Klik op Button Verkeer
         private void btnVerkeerSpel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Verkeer geklikt");
+            verkeerFrm vkr = new verkeerFrm();
+            vkr.Show();
         }
 
 

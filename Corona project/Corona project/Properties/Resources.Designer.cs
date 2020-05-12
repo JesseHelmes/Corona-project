@@ -63,6 +63,16 @@ namespace Corona_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap knp {
+            get {
+                object obj = ResourceManager.GetObject("knp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap verkeer1 {
             get {
                 object obj = ResourceManager.GetObject("verkeer1", resourceCulture);
