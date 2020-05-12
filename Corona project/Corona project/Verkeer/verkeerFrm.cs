@@ -12,7 +12,7 @@ namespace Corona_project
         private string antwoord;
         private int vraagIndex = 0, aantalVragen, aantalAntwoordBtns;
         private VerkeerVragen verkeerVragen = new VerkeerVragen();
-        private List<VerkeerVraag> vragen;
+        private List<meerkeuzenVraag> vragen;
 
         public verkeerFrm()
         {
