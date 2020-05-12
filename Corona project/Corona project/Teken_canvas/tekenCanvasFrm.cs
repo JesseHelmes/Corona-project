@@ -8,11 +8,17 @@ namespace Corona_project
 {
     public partial class tekenCanvasFrm : Form
     {
+        private Button[] toolBtns;
         private int x = -1, y = -1;
         private bool moving = false;
         private Graphics paper;
         private Pen pen, eraser;
         private Bitmap buffer;
+
+        /*
+        ToDo
+
+        */
 
         /*paint
         https://www.youtube.com/watch?v=xyEG1e5Gnic
@@ -23,8 +29,11 @@ namespace Corona_project
         public tekenCanvasFrm()
         {
             InitializeComponent();
+            btnPen.BackColor = Color.LightSteelBlue;
+            toolBtns = new Button[] { btnEraser, btnPen };
             pen = new Pen(colorPicker.Color);
-            eraser = new Pen(Color.Transparent);
+            currentColorBox.BackColor = colorPicker.Color;
+            eraser = new Pen(canvasPicBox.BackColor);
             pen.StartCap = pen.EndCap = LineCap.Round;
         }
 
@@ -41,6 +50,7 @@ namespace Corona_project
             if (colorPicker.ShowDialog() == DialogResult.OK)
             {
                 pen.Color = colorPicker.Color;
+                currentColorBox.BackColor = colorPicker.Color;
             }
         }
 
@@ -53,7 +63,6 @@ namespace Corona_project
         {
             float size = (float)brushSize.Value;
             pen.Width = size;
-            eraser.Width = size;
             moving = true;
             x = e.X;
             y = e.Y;
@@ -85,6 +94,28 @@ namespace Corona_project
             canvasPicBox.Invalidate();
         }
 
+        private void btnEraser_Click(object sender, EventArgs e)
+        {
+            pen.Color = eraser.Color;
+            resetToolSelection();
+            btnEraser.BackColor = Color.LightSteelBlue;
+        }
+
+        private void btnPen_Click(object sender, EventArgs e)
+        {
+            pen.Color = colorPicker.Color;
+            resetToolSelection();
+            btnPen.BackColor = Color.LightSteelBlue;
+        }
+
+        private void resetToolSelection()
+        {
+            for (int i = 0; i < toolBtns.Length; i++)
+            {
+                toolBtns[i].BackColor = Color.LightGray;
+            }
+        }
+
         private void canvasPicBox_SizeChanged(object sender, EventArgs e)
         {
             canvasPicBox.Invalidate();
@@ -93,8 +124,6 @@ namespace Corona_project
         private void canvasPicBox_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(buffer, 0, 0);
-            //e.Graphics.DrawImage(buffer, 0, 0, canvasPicBox.ClientSize.Width, canvasPicBox.ClientSize.Height);
-            //canvasPicBox.Invalidate();
         }
     }
 }

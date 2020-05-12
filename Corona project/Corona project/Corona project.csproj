@@ -86,8 +86,8 @@
     <Compile Include="Verkeer\verkeerFrm.Designer.cs">
       <DependentUpon>verkeerFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Verkeer\VerkeerVraag.cs" />
-    <Compile Include="Verkeer\vragen.cs" />
+    <Compile Include="Verkeer\meerkeuzenVraag.cs" />
+    <Compile Include="Verkeer\VerkeerVragen.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
