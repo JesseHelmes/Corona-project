@@ -1,0 +1,15 @@
+G:\Programmeerspul\Corona Project\Corona project\Corona project\bin\Debug\Corona project.exe.config
+G:\Programmeerspul\Corona Project\Corona project\Corona project\bin\Debug\Corona project.exe
+G:\Programmeerspul\Corona Project\Corona project\Corona project\bin\Debug\Corona project.pdb
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.csprojAssemblyReference.cache
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.frmMain.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\NederlandsEnEngels.frmNederlandsEngels.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.Properties.Resources.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.frmRekenspel.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.tekenCanvasFrm.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.frmTopo.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona_project.verkeerFrm.resources
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.csproj.GenerateResource.cache
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.csproj.CoreCompileInputs.cache
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.exe
+G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.pdb

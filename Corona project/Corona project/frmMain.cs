@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NederlandsEnEngels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +41,8 @@ namespace Corona_project
         //Klik op Button Nederland&Engels
         private void btnNederlandsEngelsSpel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nederlands en Engels geklikt");
+            frmNederlandsEngels fne = new frmNederlandsEngels();
+            fne.Show();
         }
 
         //Klik op Button TekenCanvas
