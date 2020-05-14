@@ -34,6 +34,7 @@ namespace NederlandsEnEngels
                 lblTaalModus.Text = "Nederlands naar Engels opdrachten";
                 this.Text = "Nederlands";
                 vragen = nederlandsvragen.getNederlandsVragen();
+                laadVraagKeuze();
             }
             else if (doorverbinding == DialogResult.No)
             {
@@ -41,6 +42,7 @@ namespace NederlandsEnEngels
                 lblTaalModus.Text = "Engels naar Nederlands opdrachten";
                 this.Text = "Engels opdrachten";
                 vragen = engelsvragen.getEngelseVragen();
+                laadVraagKeuze();
             }
             else
             {
@@ -48,6 +50,10 @@ namespace NederlandsEnEngels
                 this.Close();
             }
 
+        }
+
+        public void laadVraagKeuze()
+        {
             //logica
             aantalVragen = vragen.Count;
             vragen.Shuffle();
