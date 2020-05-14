@@ -13,3 +13,18 @@ G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona
 G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.csproj.CoreCompileInputs.cache
 G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.exe
 G:\Programmeerspul\Corona Project\Corona project\Corona project\obj\Debug\Corona project.pdb
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\bin\Debug\Corona project.exe.config
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\bin\Debug\Corona project.exe
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\bin\Debug\Corona project.pdb
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona project.csprojAssemblyReference.cache
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.frmMain.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\NederlandsEnEngels.frmNederlandsEngels.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.Properties.Resources.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.frmRekenspel.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.tekenCanvasFrm.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.frmTopo.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona_project.verkeerFrm.resources
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona project.csproj.GenerateResource.cache
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona project.csproj.CoreCompileInputs.cache
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona project.exe
+C:\Users\jesse\Documents\school graafschapcollege\Corona-project\Corona project\Corona project\obj\Debug\Corona project.pdb
