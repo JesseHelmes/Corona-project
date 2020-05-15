@@ -30,15 +30,12 @@ namespace Corona_project
                  "wat betekent deze bord?",
                      "eenrichtingsweg",
                      "doodlopend",
-                     "zebrapad",
-                     ""
+                     "zebrapad"
                 ),
              new meerkeuzenVraag(Properties.Resources.verkeer5,
                  "wat doe je bij deze licht?",
                     "stoppen",
-                     "doorrijden",
-                     "",
-                     ""
+                     "doorrijden"
                  ),
              new meerkeuzenVraag(Properties.Resources.verkeer6,
                  "wat is de betekenis van dit bord?",
@@ -72,15 +69,13 @@ namespace Corona_project
                  "mag je op je telefoon tijdens fietsen?",
                      "nee",
                      "ja",
-                     "alleen als er geen auto's rijden",
-                     ""
+                     "alleen als er geen auto's rijden"
                  ),//https://www.verkeer-oefenen.nl/verkeer-groep-7/oversteken
              new meerkeuzenVraag(Properties.Resources.verkeer11,
                  "wat moet je doen als de lichten knipperen?",
                      "stoppen en wachten totdat de lichten uit zijn",
                      "door rijden",
-                     "stoppen en verder rijden wanneer de spoorboom weer omhoog gaat",
-                     ""
+                     "stoppen en verder rijden wanneer de spoorboom weer omhoog gaat"
                  ),
              new meerkeuzenVraag(Properties.Resources.verkeer12,
                  "wanneer moet je de licht aan hebben op de fiets?",
@@ -100,15 +95,13 @@ namespace Corona_project
                  "wat betekend dit bord?",
                      "drempel",
                      "slecht wegdek",
-                     "heuvel",
-                     ""
+                     "heuvel"
                  ),
              new meerkeuzenVraag(Properties.Resources.verkeer15,
                  "wat betekend dit bord?",
                      "slecht wegdek",
                      "drempel",
-                     "twee heuvels",
-                     ""
+                     "twee heuvels"
                  )
         };
 
