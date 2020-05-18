@@ -1,0 +1,36 @@
+tekenen
+emmer
+
+topo maak voor knoppen 1 methode zoals die nu is
+maar gebruik de knop naam en verwijder Btn van dat naam en dat gebruik je voor het controlleren
+controlleerAntowoord
+label tekst grootte
+gebruik voor array provinces shuffle methode die is er nu toegevoegd staat in de map IListExtensions
+
+teun rekenen aanpassen
+
+
+fix typos
+Gefeliciteerd je bent klaar en*
+Wil* je opnieuw proberen?
+
+private void ShowMessageBox()
+        {
+            string message = "Gefeliciteerd je bent klaar an hebt " + lblCurrentPoints.Text + " punten behaald!";
+            string caption = "Finished";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+
+            // Displays the MessageBox.
+            result = MessageBox.Show(message + "\n" + "Will je opnieuw proberen?", caption, buttons);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                frmTopo NewForm = new frmTopo();
+                NewForm.Show();
+                this.Dispose(false);
+            }
+            else if(result == System.Windows.Forms.DialogResult.No)
+            {
+                // Closes the parent form.
+                this.Close();
+            }
